@@ -1,12 +1,13 @@
 <template>
-  <v-app style="background: rgba(0, 0, 0, 0)">
-    <v-content
-    style="  filter: contrast(1.95);"
+  <v-app>
+    <v-main
+      style="filter: contrast(1.95)"
       :style="`background-image: url(${require('../assets/bg.png')})`"
       class="fill-height bg-image"
     >
       <Navbar />
-    </v-content>
+      <Nuxt />
+    </v-main>
   </v-app>
 </template>
 
@@ -16,5 +17,16 @@
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
+}
+.nuxt-link-exact-active {
+  color: green;
+}
+a {
+  text-decoration: none;
+  font-size: 27px;
+}
+
+p:last-of-type {
+  margin-bottom: 0px;
 }
 </style>

@@ -1,24 +1,32 @@
 <template>
-    <div>
-         <v-app-bar
-      :collapse="!collapseOnScroll"
-      :collapse-on-scroll="collapseOnScroll"
-      absolute
-      color="deep-purple accent-4"
-      dark
-      scroll-target="#scrolling-techniques-6"
-    >
-      <v-app-bar-nav-icon></v-app-bar-nav-icon>
+  <v-app-bar
+    dense
+    outlined
+    dark
+    style="background: transparent; border: 2px solid"
+    width="500"
+    class="mx-auto mr-15 mt-5 rounded-pill"
+  >
+  <nav>
+    <nuxt-link to="/ContactSection">Home</nuxt-link>
+    <nuxt-link class="ml-3" to="/">About</nuxt-link>
+    <nuxt-link class="ml-3" to="/ProjectSection">Projects</nuxt-link>
+    <nuxt-link class="ml-3" to="/">Contact</nuxt-link>
+  </nav>
 
-      <v-toolbar-title>Collapsing Bar</v-toolbar-title>
-
-      <v-spacer></v-spacer>
-
-      <v-checkbox
-        v-model="collapseOnScroll"
-        color="white"
-        hide-details
-      ></v-checkbox>
-    </v-app-bar>
-    </div>
+  </v-app-bar>
 </template>
+
+<style scoped>
+nav {
+  text-align: right;
+  justify-content: right;
+  display: flex;
+  padding: 20px 30px;
+}
+nav a {
+  font-size: 30px;
+  font-weight: 700;
+  color: #e0e1ee;
+}
+</style>
