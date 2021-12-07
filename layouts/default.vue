@@ -29,4 +29,12 @@ a {
 p:last-of-type {
   margin-bottom: 0px;
 }
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.7s;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
 </style>

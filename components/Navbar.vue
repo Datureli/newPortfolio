@@ -8,7 +8,7 @@
     class="mx-auto mr-15 mt-5 rounded-pill"
   >
   <nav>
-    <nuxt-link to="/ContactSection">Home</nuxt-link>
+    <nuxt-link to="/Home">Home</nuxt-link>
     <nuxt-link class="ml-3" to="/">About</nuxt-link>
     <nuxt-link class="ml-3" to="/ProjectSection">Projects</nuxt-link>
     <nuxt-link class="ml-3" to="/">Contact</nuxt-link>
