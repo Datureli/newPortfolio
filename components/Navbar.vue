@@ -11,7 +11,7 @@
     <nuxt-link to="/Home">Home</nuxt-link>
     <nuxt-link class="ml-3" to="/">About</nuxt-link>
     <nuxt-link class="ml-3" to="/ProjectSection">Projects</nuxt-link>
-    <nuxt-link class="ml-3" to="/">Contact</nuxt-link>
+    <nuxt-link class="ml-3" to="/ContactSection">Contact</nuxt-link>
   </nav>
 
   </v-app-bar>
