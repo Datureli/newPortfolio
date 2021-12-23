@@ -25,12 +25,18 @@
               <v-expand-transition>
                 <div
                   v-if="hover"
-                  class="d-grid transition-fast-in-fast-out orange darken-2 v-card--reveal text-center white--text"
+                  class="d-grid transition-fast-in-fast-out yellow darken-2 v-card--reveal text-center white--text"
                   style="height: 100%"
                 >
-              <v-card-text class="text-h3 mx-auto mt-10"> {{ item.title }}</v-card-text>   
-                  <v-icon>mdi-github</v-icon>
-                  <v-icon>mdi-github</v-icon>
+                  <v-card-text  class="text-h3 mx-auto mt-10">
+                    {{ item.title }}</v-card-text
+                  >
+                  <a :href="item.githubLink">
+                    <v-icon x-large>mdi-github</v-icon></a
+                  >
+                  <a href="https://github.com/Datureli">
+                    <v-icon x-large>mdi-camera</v-icon></a
+                  >
                 </div>
               </v-expand-transition>
             </v-img>
@@ -46,9 +52,11 @@
       class="ml-10"
       style="top: 60%; left: -10%"
     >
-      <v-icon color="black" style="font-size: 150px" class="mx-auto"
-        >mdi-github</v-icon
-      >
+      <a href="https://github.com/Datureli" target="_blank">
+        <v-icon color="black" style="font-size: 150px" class="mx-auto"
+          >mdi-github</v-icon
+        >
+      </a>
     </v-card>
   </v-container>
 </template>
@@ -61,15 +69,31 @@ export default {
         {
           title: "Platforma do nauki front-endu",
           image: require("../assets/frEndl.png"),
+          githubLink: "https://github.com/Datureli",
+          liveLink: "",
         },
         {
-          image: require("../assets/bg.png"),
+          title: "programming blog made with nuxt",
+          image: require("../assets/myblog.png"),
+          githubLink: "https://github.com/Datureli/MyBlog",
         },
         {
-          image: require("../assets/bg.png"),
+          title: "pizza website app",
+          image: require("../assets/pizzaApp.png"),
+          githubLink: "https://github.com/Datureli",
+          liveLink: "",
         },
         {
-          image: require("../assets/bg.png"),
+          title: "shoping cart made with vue 2",
+          image: require("../assets/vuecart.png"),
+          githubLink: "https://github.com/Datureli",
+          liveLink: "",
+        },
+        {
+          title: "Old portfolio with bootstrap/jquery",
+          image: require("../assets/vuecart.png"),
+          githubLink: "https://github.com/Datureli",
+          liveLink: "",
         },
       ],
     };
