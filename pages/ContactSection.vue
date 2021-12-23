@@ -1,7 +1,7 @@
 <template>
   <v-container  style="margin-top: 100px;">
     <v-row justify="space-around">
-      <v-card width="400" height="200" class="d-grid mx-auto">
+      <v-card width="400" height="200" class="d-grid mx-auto" style="">
         <v-card class="mb-15">
           <v-icon x-large>mdi-email</v-icon>
           <h2 class="mx-auto">soleris1@gmail.com</h2>
