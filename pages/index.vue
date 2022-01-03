@@ -1,20 +1,20 @@
 <template>
-  <div class="ml-15">
+  <div class="ml-xl-15 mt-xs-15 pa-3">
     <v-card style="margin-left: 70px" color="yellow" width="150" height="5">
     </v-card>
-    <h1 class="white--text ml-15">Paweł Chmielewski</h1>
+    <h1 class="white--text ml-xl-15">Paweł Chmielewski</h1>
     <div class="half-box mx-auto mt-15">
       <h2>Front-end</h2>
       <p>
         Jestem ambitnym front-end developerem <br />
-        który cały czas poszukuje nowych wyzwań lub zleceń<br />
+        który cały czas poszukuje nowych wyzwań,zleceń<br />
         lub możliwości rozwoju
       </p>
       <p>
         Sprawdź mój ostatni projekt :
         <a
           href="http://stackoverflow.com/questions/44035418/how-to-create-a-half-box-in-html-css"
-          >Programing blog created with Nuxt.js/Vuetify</a
+          >Front-end learning platform created with vue</a
         >
       </p>
     </div>

@@ -2,40 +2,33 @@
   <v-container class="d-flex mx-auto mt-10">
 <v-row class="justify-center">
   <v-card
+
   color="transparent"
     class="m-0"
     max-width="344"
   >
-    <v-card-text class="white--text text-h4 mx-auto">
-      <div>--- Front-end developer</div>
-      <p class="text-h3">
-       Datureli
-      </p>
+    <v-card-text class="white--text text-h5 mx-auto text-center">
       <div>
-        well meaning and kindly.<br>
-        "a benevolent smile"
+ Uczę się ekosystemu jakim jest front-end od ponad 
+roku,obecnie doskonale swoje umiejętności w kierunku 
+Vuejs i z tym frameworkiem chcę związać swoją 
+przyszłość
       </div>
     </v-card-text>
-    <v-card-actions>
-      <v-btn
-        text
-        color="deep-purple accent-4"
-      >
-        Learn More
-      </v-btn>
-    </v-card-actions>
   </v-card>
    <v-card
-   color="grey darken-2"
+  elevation="0"
+   color="transparent darken-2"
    height="350"
     class="m-0"
     width="374"
   >
-  <v-card  color="grey"
-    class="mt-6 mx-auto"
+  <v-card  color="transparent"
+  elevation="0"
+    class="mt-16 mx-auto"
       height="300"
     width="304">
-<v-img :src="aboutMeImage" width="300" height="300" >
+<v-img :src="aboutMeImage" width="300" height="350" >
 
 </v-img>
   </v-card>
