@@ -37,4 +37,5 @@ p:last-of-type {
 .page-leave-to {
   opacity: 0;
 }
+
 </style>

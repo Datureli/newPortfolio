@@ -9,11 +9,7 @@
   >
     <v-carousel height="250" width="200" class="mt-15 d-grid" hide-delimiters>
       <v-carousel-item
-        style="
-          height: 100%;
-          filter: contrast(0.5);
-          background-position: bottom center;
-        "
+        style="filter: contrast(0.5); background-position: bottom center"
         class="mx-auto"
         width="500"
         v-for="(item, i) in items"
@@ -25,16 +21,16 @@
               <v-expand-transition>
                 <div
                   v-if="hover"
-                  class="d-grid transition-fast-in-fast-out yellow darken-2 v-card--reveal text-center white--text"
+                  class="d-grid yellow darken-2 text-center white--text"
                   style="height: 100%"
                 >
-                  <v-card-text  class="text-h3 mx-auto mt-10">
+                  <v-card-text class="text-h3 pa-10 mx-auto font-weight-bold">
                     {{ item.title }}</v-card-text
                   >
-                  <a :href="item.githubLink">
+                  <a :href="item.githubLink" target="_blank">
                     <v-icon x-large>mdi-github</v-icon></a
                   >
-                  <a href="https://github.com/Datureli">
+                  <a :href="item.liveLink" target="_blank">
                     <v-icon x-large>mdi-camera</v-icon></a
                   >
                 </div>
@@ -53,7 +49,7 @@
       style="top: 60%; left: -10%"
     >
       <a href="https://github.com/Datureli" target="_blank">
-        <v-icon color="black" style="font-size: 150px" class="mx-auto"
+        <v-icon color="black" style="font-size: 150px" class="mx-auto pulse"
           >mdi-github</v-icon
         >
       </a>
@@ -69,7 +65,7 @@ export default {
         {
           title: "Platforma do nauki front-endu",
           image: require("../assets/frEndl.png"),
-          githubLink: "https://github.com/Datureli",
+          githubLink: "https://github.com/Datureli/frontEndLearning",
           liveLink: "",
         },
         {
@@ -80,20 +76,26 @@ export default {
         {
           title: "pizza website app",
           image: require("../assets/pizzaApp.png"),
-          githubLink: "https://github.com/Datureli",
-          liveLink: "",
+          githubLink: "https://github.com/Datureli/PizzaWebsiteApp",
+          liveLink: "https://serene-feynman-c17c09.netlify.app/",
         },
         {
           title: "shoping cart made with vue 2",
           image: require("../assets/vuecart.png"),
-          githubLink: "https://github.com/Datureli",
+          githubLink: "https://github.com/Datureli/Shopping-cart-with-vue-2-",
           liveLink: "",
         },
         {
-          title: "Old portfolio with bootstrap/jquery",
-          image: require("../assets/vuecart.png"),
-          githubLink: "https://github.com/Datureli",
-          liveLink: "",
+          title: "Old portfolio with bootstrap/swiper.js",
+          image: require("../assets/oldportfolio.png"),
+          githubLink: "https://github.com/Datureli/Projects",
+          liveLink: "https://reverent-panini-343037.netlify.app/",
+        },
+        {
+          title: "Car service",
+          image: require("../assets/oldportfolio.png"),
+          githubLink: "https://github.com/Datureli/carWebsite",
+          liveLink: "https://friendly-leakey-4f532f.netlify.app/#",
         },
       ],
     };
@@ -102,12 +104,27 @@ export default {
 </script>
 
 <style>
-.v-card--reveal {
-  align-items: center;
-  bottom: 0;
-  justify-content: center;
-  opacity: 0.5;
-  position: absolute;
-  width: 100%;
+.pulse {
+  border-radius: 50%;
+  transform: scale(1);
+  animation: pulse-black 2s infinite;
+  animation-delay: 3s;
+  animation-iteration-count: 1;
+}
+@keyframes pulse-black {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.897);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.87);
+  }
 }
 </style>

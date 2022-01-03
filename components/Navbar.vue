@@ -5,11 +5,11 @@
     dark
     style="background: transparent; border: 2px solid"
     width="500"
-    class="mx-auto mr-15 mt-5 rounded-pill"
+    class="mx-auto mr-md-15 mt-5 rounded-pill"
   >
   <nav>
-    <nuxt-link to="/Home">Home</nuxt-link>
-    <nuxt-link class="ml-3" to="/">About</nuxt-link>
+    <nuxt-link to="/">Home</nuxt-link>
+    <nuxt-link class="ml-3" to="/AboutMe">About</nuxt-link>
     <nuxt-link class="ml-3" to="/ProjectSection">Projects</nuxt-link>
     <nuxt-link class="ml-3" to="/ContactSection">Contact</nuxt-link>
   </nav>
@@ -28,5 +28,12 @@ nav a {
   font-size: 30px;
   font-weight: 700;
   color: #e0e1ee;
+}
+a.nuxt-link-active {
+  font-weight: bold;
+}
+/* exact link will show the primary color for only the exact matching link */
+a.nuxt-link-exact-active {
+  color: #00c58e;
 }
 </style>
