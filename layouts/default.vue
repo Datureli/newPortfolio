@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app >
     <v-main
       style="filter: contrast(1.95)"
       :style="`background-image: url(${require('../assets/bg.png')})`"
@@ -12,6 +12,9 @@
 </template>
 
 <style>
+html {
+  overflow: hidden;
+}
 .bg-image {
   background-repeat: no-repeat;
   background-position: center center;

@@ -1,43 +1,33 @@
 <template>
   <v-container class="d-flex mx-auto mt-10">
-<v-row class="justify-center">
-  <v-card
-
-  color="transparent"
-    class="m-0"
-    max-width="344"
-  >
-    <v-card-text class="white--text text-h5 mx-auto text-center">
-      <div>
- Uczę się ekosystemu jakim jest front-end od ponad 
-roku,obecnie doskonale swoje umiejętności w kierunku 
-Vuejs i z tym frameworkiem chcę związać swoją 
-przyszłość
-      </div>
-    </v-card-text>
-  </v-card>
-   <v-card
-  elevation="0"
-   color="transparent darken-2"
-   height="350"
-    class="m-0"
-    width="374"
-  >
-  <v-card  color="transparent"
-  elevation="0"
-    class="mt-16 mx-auto"
-      height="300"
-    width="304">
-<v-img :src="aboutMeImage" width="300" height="350" >
-
-</v-img>
-  </v-card>
-
- 
-
-
-  </v-card>
-  </v-row>
+    <v-row class="justify-center">
+      <v-card color="transparent" class="m-0" max-width="344">
+        <v-card-text class="white--text text-h5 mx-auto text-center">
+          <div>
+            Uczę się ekosystemu jakim jest front-end od ponad roku,obecnie
+            doskonale swoje umiejętności w kierunku Vuejs i z tym frameworkiem
+            chcę związać swoją przyszłość
+          </div>
+        </v-card-text>
+      </v-card>
+      <v-card
+        elevation="0"
+        color="transparent darken-2"
+        height="350"
+        class="m-0"
+        width="374"
+      >
+        <v-card
+          color="transparent"
+          elevation="0"
+          class="mt-16 mx-auto"
+          height="300"
+          width="304"
+        >
+          <v-img :src="aboutMeImage" width="300" height="350"> </v-img>
+        </v-card>
+      </v-card>
+    </v-row>
   </v-container>
 </template>
 
@@ -45,12 +35,11 @@ przyszłość
 export default {
   data() {
     return {
-      aboutMeImage: require('../assets/paw.png')
-    }
+      aboutMeImage: require("../assets/paw.png"),
+    };
   },
-}
+};
 </script>
-
 
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Meow+Script&display=swap");
