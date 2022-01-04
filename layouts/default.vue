@@ -1,5 +1,5 @@
 <template>
-  <v-app >
+  <v-app>
     <v-main
       style="filter: contrast(1.95)"
       :style="`background-image: url(${require('../assets/bg.png')})`"
@@ -15,12 +15,7 @@
 html {
   overflow: hidden;
 }
-.bg-image {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  background-size: cover;
-}
+
 .nuxt-link-exact-active {
   color: green;
 }
@@ -40,5 +35,19 @@ p:last-of-type {
 .page-leave-to {
   opacity: 0;
 }
-
+@media screen and (min-width: 700px) {
+  .bg-image {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 690px) {
+  .bg-image {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+}
 </style>
