@@ -1,8 +1,8 @@
 <template>
   <v-container class="d-flex mx-auto mt-10">
     <v-row class="justify-center">
-      <v-card color="transparent" class="m-0" max-width="344">
-        <v-card-text class="white--text text-h5 mx-auto text-center">
+      <v-card color="transparent" elevation="0" class="m-0" max-width="344">
+        <v-card-text class="white--text text-h5 mx-auto text-center hidden-sm-and-down">
           <div>
             Uczę się ekosystemu jakim jest front-end od ponad roku,obecnie
             doskonale swoje umiejętności w kierunku Vuejs i z tym frameworkiem
@@ -20,9 +20,11 @@
         <v-card
           color="transparent"
           elevation="0"
-          class="mt-16 mx-auto"
-          height="300"
-          width="304"
+          class=" ma-md-5"
+          height="280"
+          width="284"
+          style="border-radius: 50%; margin-left: 60%"
+       
         >
           <v-img :src="aboutMeImage" width="300" height="350"> </v-img>
         </v-card>

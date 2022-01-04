@@ -15,9 +15,8 @@
 html {
   overflow: hidden;
 }
-
 .nuxt-link-exact-active {
-  color: green;
+  color: #008000;
 }
 a {
   text-decoration: none;

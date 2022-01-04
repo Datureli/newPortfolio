@@ -1,5 +1,5 @@
 <template>
-  <v-container  style="margin-top: 100px;">
+  <v-container class="mt-16 ml-xs-5">
     <v-row justify="space-around">
       <v-card width="400" height="200" class="d-grid mx-auto" style="">
         <v-card class="mb-15">
@@ -31,6 +31,6 @@ h2 {
   padding: 0 10px;
   top: -20px;
   color: white;
-  background-color: black;
+  background-color: #000000;
 }
 </style>
