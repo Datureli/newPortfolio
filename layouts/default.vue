@@ -42,7 +42,7 @@ p:last-of-type {
     background-size: cover;
   }
 }
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 699px) {
   .bg-image {
     background-repeat: no-repeat;
     background-attachment: fixed;

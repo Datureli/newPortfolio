@@ -1,34 +1,37 @@
 <template>
   <v-container class="d-flex mx-auto mt-10">
-    <v-row class="justify-center">
-      <v-card color="transparent" elevation="0" class="m-0" max-width="344">
-        <v-card-text class="white--text text-h5 mx-auto text-center hidden-sm-and-down">
-          <div>
-            Uczę się ekosystemu jakim jest front-end od ponad roku,obecnie
+    <v-row class="justify-center mx-auto mr-15">
+      <v-card color="transparent" elevation="0" max-width="344">
+        <v-card-text :class="text-{xs}" class="white--text text-h6 mx-auto text-center">
+    
+          <div class="bubble mx-auto">
+            Uczę się ekosystemu jakim jest front-end od ponad roku.Obecnie
             doskonale swoje umiejętności w kierunku Vuejs i z tym frameworkiem
             chcę związać swoją przyszłość
           </div>
         </v-card-text>
       </v-card>
+
       <v-card
         elevation="0"
         color="transparent darken-2"
         height="350"
-        class="m-0"
         width="374"
       >
         <v-card
           color="transparent"
           elevation="0"
-          class=" ma-md-5"
-          height="280"
-          width="284"
-          style="border-radius: 50%; margin-left: 60%"
-       
+          class="ma-md-5"
+          height="270"
+          width="274"
+          style="border-radius: 50%; margin-left: 60%;"
         >
           <v-img :src="aboutMeImage" width="300" height="350"> </v-img>
+          
         </v-card>
+        
       </v-card>
+      
     </v-row>
   </v-container>
 </template>
@@ -51,21 +54,7 @@ h1 {
   font-size: 70px;
 }
 
-.half-box {
-  position: relative;
-  width: 500px;
-  background-color: transparent;
-  border: 2px solid white;
-  padding: 20px;
-}
-.half-box::before {
-  content: "";
-  position: absolute;
-  width: calc(100% - 40px);
-  height: calc(100% - 40px);
-  border-top: 1px solid white;
-  border-left: 1px solid white;
-}
+
 h2 {
   position: absolute;
   display: inline-block;
@@ -75,9 +64,12 @@ h2 {
   color: white;
   background-color: black;
 }
-p {
-  color: white;
-  margin-top: 30px;
-  padding-left: 30px;
+
+.bubble {
+  max-width: 700px;
+  width: 450px;
+  padding: 20px 20px 50px 20px;
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/476907/speechbubble.svg")
+    no-repeat top center;
 }
 </style>

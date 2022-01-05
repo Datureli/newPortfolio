@@ -12,10 +12,13 @@
       </p>
       <p>
         Sprawdź mój ostatni projekt :
-        <a
+        <strong>
+     <a
           href="http://stackoverflow.com/questions/44035418/how-to-create-a-half-box-in-html-css"
           >Front-end learning platform created with vue</a
         >
+        </strong>
+   
       </p>
     </div>
   </div>
