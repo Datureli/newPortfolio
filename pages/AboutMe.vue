@@ -2,7 +2,7 @@
   <v-container class="d-flex mt-10">
     <v-row class="justify-lg-center justify-sm-start mr-16">
       <v-card color="transparent" elevation="0" max-width="344" max-height="150">
-        <v-card-text :class="text-{xs}" class="white--text text-h6 mx-auto text-center">
+        <v-card-text  class="white--text text-h6 mx-auto text-center">
     
           <div class="bubble">
             Uczę się ekosystemu jakim jest front-end od ponad roku.Obecnie
