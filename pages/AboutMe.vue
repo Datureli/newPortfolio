@@ -1,10 +1,10 @@
 <template>
-  <v-container class="d-flex mx-auto mt-10">
-    <v-row class="justify-center mx-auto mr-15">
-      <v-card color="transparent" elevation="0" max-width="344">
+  <v-container class="d-flex mt-10">
+    <v-row class="justify-lg-center justify-sm-start mr-16">
+      <v-card color="transparent" elevation="0" max-width="344" max-height="150">
         <v-card-text :class="text-{xs}" class="white--text text-h6 mx-auto text-center">
     
-          <div class="bubble mx-auto">
+          <div class="bubble">
             Uczę się ekosystemu jakim jest front-end od ponad roku.Obecnie
             doskonale swoje umiejętności w kierunku Vuejs i z tym frameworkiem
             chcę związać swoją przyszłość
@@ -21,12 +21,12 @@
         <v-card
           color="transparent"
           elevation="0"
-          class="ma-md-5"
+          class="pa-xs-n6 mx-lg-auto"
           height="270"
           width="274"
-          style="border-radius: 50%; margin-left: 60%;"
+          style="border-radius: 50%; margin-left: 80%;"
         >
-          <v-img :src="aboutMeImage" width="300" height="350"> </v-img>
+          <v-img :src="aboutMeImage" width="300" height="350" style="position: absolute;"> </v-img>
           
         </v-card>
         
