@@ -1,6 +1,6 @@
 <template>
   <v-container
-    class="mt-15 mx-auto"
+    class="mt-15 mx-auto "
     style="
       -webkit-box-shadow: 8px 8px 100px 0px rgba(17, 34, 218, 1);
       -moz-box-shadow: 8px 8px 100px 0px rgba(17, 34, 218, 1);
@@ -9,6 +9,7 @@
   >
     <v-carousel height="250" width="200" class="mt-15 d-grid" hide-delimiters>
       <v-carousel-item
+       :ripple="{ center: true }"
         style="filter: contrast(0.5); background-position: bottom center"
         class="mx-auto"
         width="500"
@@ -19,7 +20,9 @@
           <v-card class="mx-auto" color="grey lighten-4" max-width="600">
             <v-img :src="item.image">
               <v-expand-transition>
+                <v-slide-x-transition>
                 <div
+ 
                   v-if="hover"
                   class="d-grid yellow darken-2 text-center white--text"
                   style="height: 100%"
@@ -34,6 +37,7 @@
                     <v-icon x-large>mdi-camera</v-icon></a
                   >
                 </div>
+                </v-slide-x-transition>
               </v-expand-transition>
             </v-img>
           </v-card>

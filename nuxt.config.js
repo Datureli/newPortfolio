@@ -38,7 +38,8 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    '@nuxtjs/sitemap'
+    '@nuxtjs/sitemap',
+    '@nuxtjs/google-analytics' 
   ],
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
@@ -49,5 +50,22 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+  googleAnalytics: {
+    id: "{YOUR GOOGLE ANALYTICS ID}",
+    dev: false
+  },
+  head: {
+titleTemplate: '%s - ' + 'Anamol Soman',
+title: 'Website Name' || '',
+meta: [
+{ charset: 'utf-8' },
+{ name: 'viewport', content: 'width=device-width, initial-scale=1' },
+{
+hid: 'description',
+name: 'description',
+content: process.env.npm_package_description || '',
+},
+],
   }
 }
