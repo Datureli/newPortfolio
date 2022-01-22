@@ -1,15 +1,9 @@
 <template>
-  <v-container
-    class="mt-15 mx-auto "
-    style="
-      -webkit-box-shadow: 8px 8px 100px 0px rgba(17, 34, 218, 1);
-      -moz-box-shadow: 8px 8px 100px 0px rgba(17, 34, 218, 1);
-      box-shadow: 8px 8px 10px 0px white;
-    "
-  >
-    <v-carousel height="250" width="200" class="mt-15 d-grid" hide-delimiters>
+  <v-container class="mt-15 mx-auto containerShadow">
+    <v-carousel show-arrows-on-hover height="250" width="200" class="mt-15 d-grid" hide-delimiters>
       <v-carousel-item
-       :ripple="{ center: true }"
+      
+        :ripple="{ center: true }"
         style="filter: contrast(0.5); background-position: bottom center"
         class="mx-auto"
         width="500"
@@ -21,22 +15,21 @@
             <v-img :src="item.image">
               <v-expand-transition>
                 <v-slide-x-transition>
-                <div
- 
-                  v-if="hover"
-                  class="d-grid yellow darken-2 text-center white--text"
-                  style="height: 100%"
-                >
-                  <v-card-text class="text-h3 pa-10 mx-auto font-weight-bold">
-                    {{ item.title }}</v-card-text
+                  <div
+                    v-if="hover"
+                    class="d-grid yellow darken-2 text-center white--text"
+                    style="height: 100%"
                   >
-                  <a :href="item.githubLink" target="_blank">
-                    <v-icon x-large>mdi-github</v-icon></a
-                  >
-                  <a :href="item.liveLink" target="_blank">
-                    <v-icon x-large>mdi-camera</v-icon></a
-                  >
-                </div>
+                    <v-card-text class="text-h3 pa-10 mx-auto font-weight-bold">
+                      {{ item.title }}</v-card-text
+                    >
+                    <a :href="item.githubLink" target="_blank">
+                      <v-icon x-large>mdi-github</v-icon></a
+                    >
+                    <a :href="item.liveLink" target="_blank">
+                      <v-icon x-large>mdi-camera</v-icon></a
+                    >
+                  </div>
                 </v-slide-x-transition>
               </v-expand-transition>
             </v-img>
@@ -97,7 +90,7 @@ export default {
         },
         {
           title: "Car service",
-          image: require("../assets/oldportfolio.png"),
+          image: require("../assets/cars.png"),
           githubLink: "https://github.com/Datureli/carWebsite",
           liveLink: "https://friendly-leakey-4f532f.netlify.app/#",
         },
@@ -108,6 +101,11 @@ export default {
 </script>
 
 <style>
+.containerShadow {
+  -webkit-box-shadow: 8px 8px 100px 0px rgba(17, 34, 218, 1);
+  -moz-box-shadow: 8px 8px 100px 0px rgba(17, 34, 218, 1);
+  box-shadow: 8px 8px 10px 0px white;
+}
 .pulse {
   border-radius: 50%;
   transform: scale(1);

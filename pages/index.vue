@@ -1,6 +1,12 @@
 <template>
   <div class="ml-xl-15 mt-xs-15 pa-3">
-    <v-card class="hidden-sm-and-down" style="margin-left: 70px" color="yellow" width="150" height="5">
+    <v-card
+      class="hidden-sm-and-down"
+      style="margin-left: 70px"
+      color="yellow"
+      width="150"
+      height="5"
+    >
     </v-card>
     <h1 class="white--text ml-xl-15">Paweł Chmielewski</h1>
     <div class="half-box mx-auto mt-15">
@@ -13,21 +19,18 @@
       <p>
         Sprawdź mój ostatni projekt :
         <strong>
-     <a
-          href="http://stackoverflow.com/questions/44035418/how-to-create-a-half-box-in-html-css"
-          >Front-end learning platform created with vue</a
-        >
+          <a
+            href="http://stackoverflow.com/questions/44035418/how-to-create-a-half-box-in-html-css"
+            >Front-end learning platform created with vue</a
+          >
         </strong>
-   
       </p>
     </div>
   </div>
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
 <style scoped>
