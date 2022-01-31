@@ -1,5 +1,5 @@
 <template>
-  <v-container class="mt-15 mx-auto containerShadow">
+  <v-container class="mt-9 mx-auto">
     <v-carousel show-arrows-on-hover height="250" width="200" class="mt-15 d-grid" hide-delimiters>
       <v-carousel-item
       
@@ -42,8 +42,6 @@
       width="200"
       elevation="0"
       color="transparent"
-      class="ml-10"
-      style="top: 60%; left: -10%"
     >
       <a href="https://github.com/Datureli" target="_blank">
         <v-icon color="black" style="font-size: 150px" class="mx-auto pulse"
@@ -63,7 +61,7 @@ export default {
           title: "Platforma do nauki front-endu",
           image: require("../assets/frEndl.png"),
           githubLink: "https://github.com/Datureli/frontEndLearning",
-          liveLink: "",
+          liveLink: "https://cranky-leakey-58c4cc.netlify.app/",
         },
         {
           title: "programming blog made with nuxt",
@@ -101,11 +99,6 @@ export default {
 </script>
 
 <style>
-.containerShadow {
-  -webkit-box-shadow: 8px 8px 100px 0px rgba(17, 34, 218, 1);
-  -moz-box-shadow: 8px 8px 100px 0px rgba(17, 34, 218, 1);
-  box-shadow: 8px 8px 10px 0px white;
-}
 .pulse {
   border-radius: 50%;
   transform: scale(1);
