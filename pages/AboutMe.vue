@@ -1,9 +1,13 @@
 <template>
   <v-container class="d-flex mt-10">
     <v-row class="justify-lg-center justify-sm-start mr-16">
-      <v-card color="transparent" elevation="0" max-width="344" max-height="150">
-        <v-card-text  class="white--text text-h6 mx-auto text-center">
-    
+      <v-card
+        color="transparent"
+        elevation="0"
+        max-width="344"
+        max-height="150"
+      >
+        <v-card-text class="white--text text-h6 mx-auto text-center">
           <div class="bubble">
             Uczę się ekosystemu jakim jest front-end od ponad roku.Obecnie
             doskonale swoje umiejętności w kierunku Vuejs i z tym frameworkiem
@@ -24,27 +28,13 @@
           class="pa-xs-n6 mx-lg-auto"
           height="270"
           width="274"
-          style="border-radius: 50%; margin-left: 80%;"
+          style="border-radius: 50%; margin-left: 80%"
         >
-          <v-img :src="aboutMeImage" width="300" height="350" style="position: absolute;"> </v-img>
-          
         </v-card>
-        
       </v-card>
-      
     </v-row>
   </v-container>
 </template>
-
-<script>
-export default {
-  data() {
-    return {
-      aboutMeImage: require("../assets/paw.png"),
-    };
-  },
-};
-</script>
 
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Meow+Script&display=swap");
@@ -53,7 +43,6 @@ h1 {
   font-family: "Meow Script";
   font-size: 70px;
 }
-
 
 h2 {
   position: absolute;

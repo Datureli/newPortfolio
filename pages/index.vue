@@ -13,14 +13,14 @@
       <h2>Front-end</h2>
       <p>
         Jestem ambitnym front-end developerem <br />
-        który cały czas poszukuje nowych wyzwań,zleceń<br />
+        który cały czas poszukuje nowych <br />
         lub możliwości rozwoju
       </p>
       <p>
         Sprawdź mój ostatni projekt :
         <strong>
           <a
-            href="http://stackoverflow.com/questions/44035418/how-to-create-a-half-box-in-html-css"
+            href="https://cranky-leakey-58c4cc.netlify.app/"
             >Front-end learning platform created with vue</a
           >
         </strong>
@@ -47,14 +47,6 @@ h1 {
   background-color: transparent;
   border: 2px solid white;
   padding: 20px;
-}
-.half-box::before {
-  content: "";
-  position: absolute;
-  width: calc(100% - 40px);
-  height: calc(100% - 40px);
-  border-top: 1px solid white;
-  border-left: 1px solid white;
 }
 h2 {
   position: absolute;
