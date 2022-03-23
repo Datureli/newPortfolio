@@ -7,14 +7,24 @@
         max-width="344"
         max-height="150"
       >
-        <v-card-text
-        
-          class="white--text text-h6 mx-auto text-center"
-        >
-          <div class="bubble"  >
-           <p  v-if="!nextShow">Uczę się ekosystemu jakim jest front-end od ponad roku.Obecnie
-            doskonale swoje umiejętności w kierunku Vuejs i z tym frameworkiem
-            chcę związać swoją przyszłość</p> 
+        <v-card-text class="white--text text-h6 mx-auto text-center">
+          <div class="bubble">
+            <div v-if="!firstPartOfText">
+              <p>
+                Uczę się ekosystemu jakim jest front-end od ponad roku.Obecnie
+                doskonale swoje umiejętności w kierunku Vuejs i z tym
+                frameworkiem chcę związać swoją przyszłość
+              </p>
+            </div>
+            <div
+              v-else-if="secondPartOfText"
+              v-for="(technology, index) in technologies"
+              :key="index"
+            >
+              <p>Technologie które poznałem:</p>
+              {{ technology.name }}
+            </div>
+            <div v-else-if="thirdPartOfText"><p>Znajdziesz mnie na:</p></div>
           </div>
         </v-card-text>
       </v-card>
@@ -43,13 +53,28 @@
 export default {
   data() {
     return {
-      nextShow: false,
+      firstPartOfText: false,
+      secondPartOfText: false,
+      thirdPartOfText: false,
+      technologies: [
+        {
+          name: "Html",
+          link: "",
+        },
+      ],
     };
   },
   mounted() {
     setTimeout(() => {
-      this.nextShow = !this.nextShow;
+      this.firstPartOfText = true;
     }, 3000);
+    setTimeout(() => {
+      this.secondPartOfText = true;
+    }, 6000);
+    setTimeout(() => {
+      this.thirdPartOfText = true;
+      this.secondPartOfText = false;
+    }, 10000);
   },
 };
 </script>
@@ -75,6 +100,7 @@ h2 {
 .bubble {
   max-width: 700px;
   width: 450px;
+  height: 230px;
   padding: 20px 20px 50px 20px;
   background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/476907/speechbubble.svg")
     no-repeat top center;
