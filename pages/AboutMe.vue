@@ -7,11 +7,14 @@
         max-width="344"
         max-height="150"
       >
-        <v-card-text class="white--text text-h6 mx-auto text-center">
-          <div class="bubble">
-            Uczę się ekosystemu jakim jest front-end od ponad roku.Obecnie
+        <v-card-text
+        
+          class="white--text text-h6 mx-auto text-center"
+        >
+          <div class="bubble"  >
+           <p  v-if="!nextShow">Uczę się ekosystemu jakim jest front-end od ponad roku.Obecnie
             doskonale swoje umiejętności w kierunku Vuejs i z tym frameworkiem
-            chcę związać swoją przyszłość
+            chcę związać swoją przyszłość</p> 
           </div>
         </v-card-text>
       </v-card>
@@ -35,6 +38,21 @@
     </v-row>
   </v-container>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      nextShow: false,
+    };
+  },
+  mounted() {
+    setTimeout(() => {
+      this.nextShow = !this.nextShow;
+    }, 3000);
+  },
+};
+</script>
 
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Meow+Script&display=swap");

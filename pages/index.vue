@@ -14,7 +14,7 @@
       <p>
         Jestem ambitnym front-end developerem <br />
         który cały czas poszukuje nowych <br />
-        lub możliwości rozwoju
+        możliwości rozwoju
       </p>
       <p>
         Sprawdź mój ostatni projekt :
