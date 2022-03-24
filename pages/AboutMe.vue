@@ -1,60 +1,59 @@
 <template>
-  <v-container class="d-flex mt-15">
-    <v-row class="justify-center">
-      <v-card color="transparent" elevation="0">
-        <v-card-text class="white--text text-h6 mx-auto text-center">
-          <div class="bubble">
-            <p
-              v-text="
-                !firstPartOfText
-                  ? ''
-                  : secondPartOfText
-                  ? 'Technologie które poznałem:'
-                  : 'Znajdziesz mnie na:'
-              "
-            ></p>
-            <div v-if="!firstPartOfText">
-              <p>
-                Uczę się ekosystemu jakim jest front-end od ponad roku.Obecnie
-                doskonale swoje umiejętności w kierunku Vuejs i z tym
-                frameworkiem chcę związać swoją przyszłość
-              </p>
-            </div>
-            <div
-              v-else-if="secondPartOfText"
-              v-for="(technology, index) in technologies"
-              :key="index"
-              class="text-wrap"
-            >
-              {{ technology.name }}
-            </div>
-            <div
-              v-else-if="thirdPartOfText"
-              v-for="(socialMediaLink, index) in socialMediaLinks"
-              :key="index"
-            >
-              <p>
-                <a :href="socialMediaLink.link" target="_blank">{{
-                  socialMediaLink.title
-                }}</a>
-              </p>
-            </div>
+  <v-row class="justify-center mt-15">
+    <v-card color="transparent" elevation="0">
+      <v-card-text class="white--text text-h6 mx-auto text-center">
+        <div class="bubble">
+          <p
+            v-text="
+              !firstPartOfText
+                ? ''
+                : secondPartOfText
+                ? 'Technologie które poznałem:'
+                : 'Znajdziesz mnie na:'
+            "
+          ></p>
+          <div v-if="!firstPartOfText">
+            <p>
+              Uczę się ekosystemu jakim jest front-end od ponad roku.Obecnie
+              doskonale swoje umiejętności w kierunku Vuejs i z tym frameworkiem
+              chcę związać swoją przyszłość
+            </p>
           </div>
-        </v-card-text>
-      </v-card>
-      <v-card
-        height="150"
-        class="reBack text-center mt-8 p-5"
-        color="transparent"
-      >
-        <v-row>
-          <v-btn small @click="backToFirstPartOfText">1</v-btn>
-          <v-btn small @click="backToSecondPartOfText">2</v-btn>
-          <v-btn small @click="backToThirdPartOfText">3</v-btn>
-        </v-row>
-      </v-card>
-    </v-row>
-  </v-container>
+          <div
+            v-else-if="secondPartOfText"
+            v-for="(technology, index) in technologies"
+            :key="index"
+            class="text-wrap"
+          >
+            {{ technology.name }}
+          </div>
+          <div
+            v-else-if="thirdPartOfText"
+            v-for="(socialMediaLink, index) in socialMediaLinks"
+            :key="index"
+          >
+            <p>
+              <a :href="socialMediaLink.link" target="_blank">{{
+                socialMediaLink.title
+              }}</a>
+            </p>
+          </div>
+        </div>
+      </v-card-text>
+    </v-card>
+    <v-card
+      v-if="showBackButtons"
+      height="150"
+      class="reBack text-center mt-8"
+      color="transparent"
+    >
+      <v-row>
+        <v-btn small @click="backToFirstPartOfText">1</v-btn>
+        <v-btn small @click="backToSecondPartOfText">2</v-btn>
+        <v-btn small @click="backToThirdPartOfText">3</v-btn>
+      </v-row>
+    </v-card>
+  </v-row>
 </template>
 
 <script>
@@ -64,6 +63,7 @@ export default {
       firstPartOfText: false,
       secondPartOfText: false,
       thirdPartOfText: false,
+      showBackButtons: false,
       technologies: [
         {
           name: "Html",
@@ -108,6 +108,7 @@ export default {
     setTimeout(() => {
       this.thirdPartOfText = true;
       this.secondPartOfText = false;
+      this.showBackButtons = true
     }, 10000);
   },
   computed: {
