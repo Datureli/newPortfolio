@@ -1,6 +1,6 @@
 <template>
   <v-container class="d-flex mt-10">
-    <v-row class="justify-lg-center justify-sm-start mr-16">
+    <v-row class="justify-lg-center justify-sm-start">
       <v-card
         color="transparent"
         elevation="0"
@@ -9,6 +9,12 @@
       >
         <v-card-text class="white--text text-h6 mx-auto text-center">
           <div class="bubble">
+            <p
+              v-text="
+                !firstPartOfText ? '' : secondPartOfText ? 'Technologie które poznałem:' : 'Znajdziesz mnie na:'
+              "
+            >
+            </p>
             <div v-if="!firstPartOfText">
               <p>
                 Uczę się ekosystemu jakim jest front-end od ponad roku.Obecnie
@@ -21,10 +27,9 @@
               v-for="(technology, index) in technologies"
               :key="index"
             >
-              <p>Technologie które poznałem:</p>
               {{ technology.name }}
             </div>
-            <div v-else-if="thirdPartOfText"><p>Znajdziesz mnie na:</p></div>
+            <div v-else-if="thirdPartOfText"></div>
           </div>
         </v-card-text>
       </v-card>
@@ -61,6 +66,18 @@ export default {
           name: "Html",
           link: "",
         },
+        {
+          name: "Css",
+          link: "",
+        },
+        {
+          name: "JavaScript",
+          link: "",
+        },
+        {
+          name: "Vue",
+          link: "",
+        },
       ],
     };
   },
@@ -70,7 +87,7 @@ export default {
     }, 3000);
     setTimeout(() => {
       this.secondPartOfText = true;
-    }, 6000);
+    }, 3000);
     setTimeout(() => {
       this.thirdPartOfText = true;
       this.secondPartOfText = false;
