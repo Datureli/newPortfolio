@@ -42,10 +42,10 @@
           </div>
         </v-card-text>
       </v-card>
-      <div class="reBack">
-        <p>1</p>
-        <p>2</p>
-        <p>3</p>
+      <div class="reBack text-center">
+        <button @click="backToFirstPartOfText">1</button>
+        <button @click="backToSecondPartOfText">2</button>
+        <button @click="backToThirdPartOfText">3</button>
       </div>
     </v-row>
   </v-container>
@@ -118,6 +118,23 @@ export default {
       }
     },
   },
+  methods: {
+    backToFirstPartOfText() {
+      this.firstPartOfText = false;
+      this.secondPartOfText = false;
+      this.thirdPartOfText = false;
+    },
+    backToSecondPartOfText() {
+      this.firstPartOfText = true;
+      this.secondPartOfText = true;
+      this.thirdPartOfText = false;
+    },
+    backToThirdPartOfText() {
+      this.firstPartOfText = true;
+      this.thirdPartOfText = true;
+      this.secondPartOfText = false;
+    },
+  },
 };
 </script>
 
@@ -139,8 +156,11 @@ h2 {
   background-color: black;
 }
 .reBack {
-  width: 20px;
-  height: 100px;
+  display: grid;
+  width: 40px;
+  color: white;
+  margin-top: 20px;
+  height: 190px;
   border: 2px solid white;
 }
 
