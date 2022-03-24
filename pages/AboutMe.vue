@@ -1,20 +1,18 @@
 <template>
-  <v-container class="d-flex mt-10">
-    <v-row class="justify-lg-center justify-sm-start">
-      <v-card
-        color="transparent"
-        elevation="0"
-        max-width="344"
-        max-height="150"
-      >
+  <v-container class="d-flex mt-15">
+    <v-row class="justify-center">
+      <v-card color="transparent" elevation="0">
         <v-card-text class="white--text text-h6 mx-auto text-center">
           <div class="bubble">
             <p
               v-text="
-                !firstPartOfText ? '' : secondPartOfText ? 'Technologie które poznałem:' : 'Znajdziesz mnie na:'
+                !firstPartOfText
+                  ? ''
+                  : secondPartOfText
+                  ? 'Technologie które poznałem:'
+                  : 'Znajdziesz mnie na:'
               "
-            >
-            </p>
+            ></p>
             <div v-if="!firstPartOfText">
               <p>
                 Uczę się ekosystemu jakim jest front-end od ponad roku.Obecnie
@@ -26,30 +24,29 @@
               v-else-if="secondPartOfText"
               v-for="(technology, index) in technologies"
               :key="index"
+              class="text-wrap"
             >
               {{ technology.name }}
             </div>
-            <div v-else-if="thirdPartOfText"></div>
+            <div
+              v-else-if="thirdPartOfText"
+              v-for="(socialMediaLink, index) in socialMediaLinks"
+              :key="index"
+            >
+              <p>
+                <a :href="socialMediaLink.link" target="_blank">{{
+                  socialMediaLink.title
+                }}</a>
+              </p>
+            </div>
           </div>
         </v-card-text>
       </v-card>
-
-      <v-card
-        elevation="0"
-        color="transparent darken-2"
-        height="350"
-        width="374"
-      >
-        <v-card
-          color="transparent"
-          elevation="0"
-          class="pa-xs-n6 mx-lg-auto"
-          height="270"
-          width="274"
-          style="border-radius: 50%; margin-left: 80%"
-        >
-        </v-card>
-      </v-card>
+      <div class="reBack">
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+      </div>
     </v-row>
   </v-container>
 </template>
@@ -79,19 +76,47 @@ export default {
           link: "",
         },
       ],
+      socialMediaLinks: [
+        {
+          title: "Facebook",
+          link: "https://www.facebook.com/grzegorz.pacek.79",
+        },
+        {
+          title: "Github",
+          link: "https://github.com/Datureli",
+        },
+        {
+          title: "LinkedIn",
+          link: "https://www.linkedin.com/in/pawe%C5%82-chmielewski-472a781a6/",
+        },
+      ],
     };
   },
   mounted() {
     setTimeout(() => {
       this.firstPartOfText = true;
-    }, 3000);
+    }, 5000);
     setTimeout(() => {
       this.secondPartOfText = true;
-    }, 3000);
+    }, 5000);
     setTimeout(() => {
       this.thirdPartOfText = true;
       this.secondPartOfText = false;
     }, 10000);
+  },
+  computed: {
+    trackMouse() {
+      var pointerX = -1;
+      var pointerY = -1;
+      document.onmousemove = function (event) {
+        pointerX = event.pageX;
+        pointerY = event.pageY;
+      };
+      setInterval(pointerCheck, 1000);
+      function pointerCheck() {
+        console.log("Cursor at: " + pointerX + ", " + pointerY);
+      }
+    },
   },
 };
 </script>
@@ -113,9 +138,13 @@ h2 {
   color: white;
   background-color: black;
 }
+.reBack {
+  width: 20px;
+  height: 100px;
+  border: 2px solid white;
+}
 
 .bubble {
-  max-width: 700px;
   width: 450px;
   height: 230px;
   padding: 20px 20px 50px 20px;
