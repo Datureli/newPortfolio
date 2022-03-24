@@ -42,11 +42,17 @@
           </div>
         </v-card-text>
       </v-card>
-      <div class="reBack text-center">
-        <button @click="backToFirstPartOfText">1</button>
-        <button @click="backToSecondPartOfText">2</button>
-        <button @click="backToThirdPartOfText">3</button>
-      </div>
+      <v-card
+        height="150"
+        class="reBack text-center mt-8 p-5"
+        color="transparent"
+      >
+        <v-row>
+          <v-btn small @click="backToFirstPartOfText">1</v-btn>
+          <v-btn small @click="backToSecondPartOfText">2</v-btn>
+          <v-btn small @click="backToThirdPartOfText">3</v-btn>
+        </v-row>
+      </v-card>
     </v-row>
   </v-container>
 </template>
@@ -158,9 +164,6 @@ h2 {
 .reBack {
   display: grid;
   width: 40px;
-  color: white;
-  margin-top: 20px;
-  height: 190px;
   border: 2px solid white;
 }
 
