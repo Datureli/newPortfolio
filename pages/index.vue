@@ -19,8 +19,7 @@
       <p>
         Sprawdź mój ostatni projekt :
         <strong>
-          <a
-            href="https://cranky-leakey-58c4cc.netlify.app/"
+          <a href="https://cranky-leakey-58c4cc.netlify.app/"
             >Front-end learning platform created with vue</a
           >
         </strong>
@@ -28,10 +27,6 @@
     </div>
   </div>
 </template>
-
-<script>
-export default {};
-</script>
 
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Meow+Script&display=swap");
