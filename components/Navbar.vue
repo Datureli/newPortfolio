@@ -32,7 +32,7 @@ nav a {
 a.nuxt-link-active {
   font-weight: bold;
 }
-/* exact link will show the primary color for only the exact matching link */
+
 a.nuxt-link-exact-active {
   color: #00c58e;
 }
