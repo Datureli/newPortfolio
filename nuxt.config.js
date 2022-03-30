@@ -1,6 +1,7 @@
 import colors from "vuetify/es5/util/colors";
 
 export default {
+  target: 'static',
   head: {
     titleTemplate: "%s - nuxt-portfolio",
     title: "nuxt-portfolio",
@@ -15,8 +16,9 @@ export default {
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
   },
-
-  // Global CSS: https://go.nuxtjs.dev/config-css
+  generate: {
+    fallback: true
+  },
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -38,6 +40,7 @@ export default {
   vuetify: {
     customVariables: ["~/assets/variables.scss"],
   },
+
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},

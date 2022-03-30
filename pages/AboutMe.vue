@@ -172,10 +172,9 @@ export default {
 <style scoped>
 .reBack {
   display: grid;
-    width: 40px;
+  width: 40px;
   border: 2px solid white;
 }
-
 .bubble {
   width: 450px;
   height: 230px;
