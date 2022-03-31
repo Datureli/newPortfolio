@@ -59,7 +59,7 @@ export default {
       items: [
         {
           title: "Platforma do nauki front-endu",
-          image: require("../assets/frEndl.png"),
+          image: require("../assets/frontend.png"),
           githubLink: "https://github.com/Datureli/frontEndLearning",
           liveLink: "https://cranky-leakey-58c4cc.netlify.app/",
         },
@@ -70,7 +70,7 @@ export default {
         },
         {
           title: "pizza website app",
-          image: require("../assets/pizzaApp.png"),
+          image: require("../assets/pizzaapp.png"),
           githubLink: "https://github.com/Datureli/PizzaWebsiteApp",
           liveLink: "https://serene-feynman-c17c09.netlify.app/",
         },

@@ -1,7 +1,7 @@
 import colors from "vuetify/es5/util/colors";
 
 export default {
-  target: 'static',
+  target: "static",
   head: {
     titleTemplate: "%s - " + "Paweł Chmielewski",
     title: "portfolio",
@@ -17,27 +17,20 @@ export default {
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
   },
   generate: {
-    fallback: true
+    fallback: true,
   },
-  css: [],
 
   components: true,
   loading: "~/components/loading.vue",
 
-  buildModules: [
+  buildModules: ["@nuxtjs/vuetify"],
 
-    "@nuxtjs/vuetify",
-  ],
-
-  // Modules: https://go.nuxtjs.dev/config-modules
   modules: ["@nuxtjs/sitemap", "@nuxtjs/google-analytics"],
 
-  // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
     customVariables: ["~/assets/variables.scss"],
   },
 
-  build: {},
   googleAnalytics: {
     id: "{YOUR GOOGLE ANALYTICS ID}",
     dev: false,
