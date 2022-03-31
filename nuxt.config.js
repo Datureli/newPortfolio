@@ -3,8 +3,8 @@ import colors from "vuetify/es5/util/colors";
 export default {
   target: 'static',
   head: {
-    titleTemplate: "%s - nuxt-portfolio",
-    title: "nuxt-portfolio",
+    titleTemplate: "%s - " + "Paweł Chmielewski",
+    title: "portfolio",
     htmlAttrs: {
       lang: "en",
     },
@@ -23,9 +23,9 @@ export default {
 
   components: true,
   loading: "~/components/loading.vue",
-  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
+
   buildModules: [
-    // https://go.nuxtjs.dev/vuetify
+
     "@nuxtjs/vuetify",
   ],
 
@@ -41,18 +41,5 @@ export default {
   googleAnalytics: {
     id: "{YOUR GOOGLE ANALYTICS ID}",
     dev: false,
-  },
-  head: {
-    titleTemplate: "%s - " + "Paweł Chmielewski",
-    title: "Portfolio" || "",
-    meta: [
-      { charset: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      {
-        hid: "description",
-        name: "description",
-        content: process.env.npm_package_description || "",
-      },
-    ],
   },
 };
