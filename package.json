@@ -1,7 +1,6 @@
 {
   "name": "nuxt-portfolio",
   "version": "1.0.0",
-  "private": true,
   "scripts": {
     "dev": "nuxt",
     "build": "CI= nuxt build",
