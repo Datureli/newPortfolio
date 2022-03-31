@@ -3,7 +3,7 @@ import colors from "vuetify/es5/util/colors";
 export default {
   target: "static",
   head: {
-    mode: 'universal',
+    mode: "universal",
     titleTemplate: "%s - " + "Paweł Chmielewski",
     title: "portfolio",
     htmlAttrs: {
@@ -17,14 +17,15 @@ export default {
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
   },
-  
-build: {
-  parallel: true,
-  cache: true,
-  hardSource: true,
-},
+
   components: true,
-  loading: "~/components/loading.vue",
+  loaders: {
+    vue: {
+      compilerOptions: {
+        preserveWhitespace: false
+      }
+    }
+  },
 
   buildModules: ["@nuxtjs/vuetify"],
 
