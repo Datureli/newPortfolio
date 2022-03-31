@@ -1,4 +1,3 @@
-
 export default {
   target: "static",
   head: {
@@ -21,18 +20,14 @@ export default {
   loaders: {
     vue: {
       compilerOptions: {
-        preserveWhitespace: false
-      }
-    }
+        preserveWhitespace: false,
+      },
+    },
   },
 
   buildModules: ["@nuxtjs/vuetify"],
 
   //modules: ["@nuxtjs/sitemap", "@nuxtjs/google-analytics"],
-
-  vuetify: {
-    customVariables: ["~/assets/variables.scss"],
-  },
 
   googleAnalytics: {
     id: "{YOUR GOOGLE ANALYTICS ID}",
