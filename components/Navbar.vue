@@ -9,9 +9,9 @@
   >
   <nav>
     <nuxt-link to="/">Home</nuxt-link>
-    <nuxt-link class="ml-3" to="/AboutMe">About</nuxt-link>
-    <nuxt-link class="ml-3" to="/ProjectSection">Projects</nuxt-link>
-    <nuxt-link class="ml-3" to="/ContactSection">Contact</nuxt-link>
+    <nuxt-link class="ml-3" to="/aboutMe">About</nuxt-link>
+    <nuxt-link class="ml-3" to="/projectSection">Projects</nuxt-link>
+    <nuxt-link class="ml-3" to="/contactSection">Contact</nuxt-link>
   </nav>
 
   </v-app-bar>
