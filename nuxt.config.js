@@ -19,7 +19,11 @@ export default {
   generate: {
     fallback: true,
   },
-
+build: {
+  parallel: true,
+  cache: true,
+  hardSource: true,
+},
   components: true,
   loading: "~/components/loading.vue",
 
