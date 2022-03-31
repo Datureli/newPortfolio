@@ -40,7 +40,7 @@ h1 {
   position: relative;
   width: 500px;
   background-color: transparent;
-  border: 2px solid white;
+  border: 2px solid rgb(214, 185, 185);
   padding: 20px;
 }
 h2 {
