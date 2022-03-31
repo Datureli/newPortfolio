@@ -3,6 +3,7 @@ import colors from "vuetify/es5/util/colors";
 export default {
   target: "static",
   head: {
+    mode: 'universal',
     titleTemplate: "%s - " + "Paweł Chmielewski",
     title: "portfolio",
     htmlAttrs: {
