@@ -25,7 +25,7 @@ export default {
 
   buildModules: ["@nuxtjs/vuetify"],
 
-  modules: ["@nuxtjs/sitemap", "@nuxtjs/google-analytics"],
+  //modules: ["@nuxtjs/sitemap", "@nuxtjs/google-analytics"],
 
   vuetify: {
     customVariables: ["~/assets/variables.scss"],
