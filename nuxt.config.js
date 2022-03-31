@@ -7,7 +7,7 @@ export default {
     titleTemplate: "%s - " + "Paweł Chmielewski",
     title: "portfolio",
     htmlAttrs: {
-      lang: "en",
+      lang: "pl",
     },
     meta: [
       { charset: "utf-8" },
@@ -17,9 +17,7 @@ export default {
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
   },
-  generate: {
-    fallback: true,
-  },
+  
 build: {
   parallel: true,
   cache: true,
