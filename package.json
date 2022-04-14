@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "node --max-old-space-size=4096 node_modules/nuxt/bin/nuxt.js nuxt",
     "build": "node --max-old-space-size=4096 node_modules/nuxt/bin/nuxt.js build",
-    "start": "node --max-old-space-size=4096 node_modules/nuxt/bin/nuxt.js start",
-    "generate": "nuxt generate"
+    "start": "node --max-old-space-size=4096 node_modules/nuxt/bin/nuxt.js start"
   },
   "dependencies": {
     "@nuxtjs/google-analytics": "^2.4.0",
