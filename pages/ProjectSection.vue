@@ -1,5 +1,5 @@
 <template>
-  <v-container class="mt-9 mx-auto">
+  <v-container class="mt-8 mx-auto">
     <v-carousel show-arrows-on-hover height="250" width="200" class="mt-15 d-grid" hide-delimiters>
       <v-carousel-item
       
