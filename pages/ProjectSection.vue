@@ -70,7 +70,7 @@ export default {
         },
         {
           title: "pizza website app",
-          image: require("../assets/pizzaapp.png"),
+       //   image: require("../assets/pizzaapp.png"),
           githubLink: "https://github.com/Datureli/PizzaWebsiteApp",
           liveLink: "https://serene-feynman-c17c09.netlify.app/",
         },
