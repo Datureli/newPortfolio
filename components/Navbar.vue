@@ -5,7 +5,7 @@
     dark
     style="background: transparent; border: 2px solid"
     width="500"
-    class="mx-auto mr-md-15 mt-5 rounded-pill"
+    class="mx-auto mr-md-15 mt-4g rounded-pill"
   >
   <nav>
     <nuxt-link to="/">Home</nuxt-link>
