@@ -1,6 +1,6 @@
 <template>
   <v-container class="mt-9 mx-auto">
-    <v-carousel show-arrows-on-hover height="250" width="200" class="mt-15 d-grid" hide-delimiters>
+    <v-carousel show-arrows-on-hover height="250" width="200" class="mt-14 d-grid" hide-delimiters>
       <v-carousel-item
       
         :ripple="{ center: true }"
