@@ -87,10 +87,10 @@ export default {
           liveLink: "https://reverent-panini-343037.netlify.app/",
         },
         {
-          title: "Car service",
-          image: require("../assets/cars.png"),
-          githubLink: "https://github.com/Datureli/carWebsite",
-          liveLink: "https://friendly-leakey-4f532f.netlify.app/#",
+          title: "Computer parts service with react",
+          image: require("../assets/compservice.png"),
+          githubLink: "https://github.com/Datureli/mdtask",
+          liveLink: "https://fanciful-genie-6867e6.netlify.app/",
         },
       ],
     };
