@@ -68,12 +68,11 @@ export default {
           image: require("../assets/myblog.png"),
           githubLink: "https://github.com/Datureli/MyBlog",
         },
-        {
-          title: "pizza website app",
-          image: require("../assets/pizza.png"),
-          githubLink: "https://github.com/Datureli/PizzaWebsiteApp",
-          liveLink: "https://serene-feynman-c17c09.netlify.app/",
-        },
+     //   {    title: "pizza website app",
+       //   image: require("../assets/pizza.png"),
+       //   githubLink: "https://github.com/Datureli/PizzaWebsiteApp",
+     //     liveLink: "https://serene-feynman-c17c09.netlify.app/",
+     //   },
         {
           title: "shoping cart made with vue 2",
           image: require("../assets/vuecart.png"),
