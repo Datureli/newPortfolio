@@ -1,19 +1,9 @@
 <template>
-  <div class="ml-xl-15 mt-xs-15 pa-3">
-    <v-card
-      class="hidden-sm-and-down"
-      style="margin-left: 70px"
-      color="yellow"
-      width="150"
-      height="5"
-    >
-    </v-card>
-    <h1 class="white--text ml-xl-15">Paweł Chmielewski</h1>
+  <div class="mx-auto">
     <div class="half-box mx-auto mt-15">
       <h2>Front-end</h2>
       <p>
-        Jestem ambitnym front-end developerem <br />
-        który cały czas poszukuje nowych <br />
+        Jestem ambitnym front-end developerem który cały czas poszukuje nowych
         możliwości rozwoju
       </p>
       <p>
@@ -29,18 +19,11 @@
 </template>
 
 <style scoped>
-@import url("https://fonts.googleapis.com/css2?family=Meow+Script&display=swap");
-
-h1 {
-  font-family: "Meow Script";
-  font-size: 70px;
-}
-
 .half-box {
   position: relative;
   width: 500px;
   border: 2px solid rgb(214, 185, 185);
-  padding: 20px;
+  padding: 10px;
 }
 h2 {
   position: absolute;
@@ -54,6 +37,8 @@ h2 {
 p {
   color: white;
   margin-top: 30px;
-  padding-left: 30px;
+  padding-left: 20px;
+  font-size: 23px;
+  font-weight: 700;
 }
 </style>
