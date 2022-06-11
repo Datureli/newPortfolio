@@ -16,7 +16,7 @@
   </v-container>
 </template>
 
-<style>
+<style scoped>
 h1 {
   display: inline-block;
   margin-left: 20px;

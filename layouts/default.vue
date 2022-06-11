@@ -2,7 +2,7 @@
   <v-app>
     <v-main
       style="filter: contrast(1.95)"
-      :style="`background-image: url(${require('../assets/bg.png')})`"
+      :style="`background-image: url(${require('../assets/bg.png')}`"
       class="fill-height bg-image"
     >
       <Navbar />
@@ -14,6 +14,7 @@
 <style>
 html {
   overflow: hidden;
+
 }
 .nuxt-link-exact-active {
   color: #008000;

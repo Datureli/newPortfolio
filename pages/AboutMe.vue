@@ -82,55 +82,42 @@ export default {
     technologies: [
       {
         name: "Html",
-        link: "",
       },
       {
         name: "Css",
-        link: "",
       },
       {
         name: "JavaScript",
-        link: "",
       },
       {
         name: "Vue",
-        link: "",
       },
       {
         name: "Vuetify",
-        link: "",
       },
       {
         name: "Vue-router",
-        link: "",
       },
       {
         name: "Vuex",
-        link: "",
       },
       {
         name: "Nuxt",
-        link: "",
       },
       {
         name: "Swiper.js",
-        link: "",
       },
       {
         name: "Gsap",
-        link: "",
       },
       {
         name: "Bootstrap",
-        link: "",
       },
       {
         name: "Git and Github",
-        link: "",
       },
       {
         name: "basic react",
-        link: "",
       },
     ],
     socialMediaLinks: [
@@ -185,7 +172,7 @@ export default {
 .reBack {
   display: grid;
   width: 40px;
-  border: 2px solid white;
+  border: 2px solid #ffffff;
 }
 .bubble {
   width: 430px;
